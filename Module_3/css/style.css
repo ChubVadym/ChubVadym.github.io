@@ -1,0 +1,47 @@
+.wrapper {
+    background-color: white;
+    box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 1);
+    box-sizing: border-box; /*для учета отступов в размере элемента*/
+    font-family: sans-serif;
+    font-size: 13.33px;
+    margin: 0px auto;
+    padding: 50px 48px 60px 46px;
+    width: 1060px;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 1);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(204, 204, 204, 1);
+}
+
+/*MENU*/
+
+.upper_menu {
+    background-image: url("../img/menu_bg.gif");
+    font-size: 14.67px;
+    height: 40px;
+    margin: 40px 0px;
+    text-shadow: 1px 1px 2px black;
+    width: 966px;
+}
+
+.upper_menu li {
+    border-left: 1px solid transparent; /*Прозрачные границы для стабилизации размера*/
+    border-right: 1px solid transparent;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 44px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    width: 103px;
+}
+
+.upper_menu li:hover { /*Добавление границ и фонового изображения при наведении*/
+    background-image: url("../img/menu_button.gif");
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+    width: 103px;
+}
+
+.upper_menu a {
+    color: white;
+    text-decoration: none;
+}
