@@ -45,3 +45,39 @@
     color: white;
     text-decoration: none;
 }
+
+/*TOOLBAR*/
+.toolbar { /*Внешняя граница*/
+    border: 1px solid #c8c8c8;
+    float: left;
+    width: 240px;
+}
+
+.toolbar li {
+    border-bottom: 1px solid #c8c8c8;
+    box-sizing: border-box; /*для учета отступов в размере элемента*/
+    height: 40px;
+    line-height: 40px;
+    padding-left: 24px;
+    width: 240px;
+}
+
+.toolbar li:last-child { /*Убирание двойной рамки*/
+    border-bottom: none;
+}
+
+.toolbar li:hover { /* отступ при наведении*/
+    background-color: #f9f9f9;
+    padding-left: 36px;
+}
+
+.toolbar a {
+    color: #656363;
+    display: block; /* Как сделать чтоб ссылка заходила на Padding?*/
+    text-decoration: none;
+
+}
+
+.toolbar a:hover {
+    color: #2c2c2c;
+}
