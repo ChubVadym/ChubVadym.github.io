@@ -19,3 +19,60 @@
     float: right;
     margin-right: 14px;
 }
+
+
+.content {
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+}
+
+ul {
+    font-size: 0;
+    line-height: 0; /*чтоб убрать отступы в линии*/
+}
+
+ul li {
+    width: 264px;
+    height: 182px;
+    display: inline-block;
+    position: relative;
+    margin-right: 12px;
+}
+
+ul li:nth-child(3n) {
+    margin-right: 0px;
+}
+
+figure {
+    text-align: center;
+    width: 264px;
+    height: 182px;
+}
+
+li img {
+    width: 264px;
+    height: 182px;
+}
+
+li .frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+figcaption {
+    margin-top: 3px;
+    color: #e6e6e6;
+    text-align: center;
+    line-height: 1.1em;
+    font-family: Tahoma;
+    font-size: 15.24px;
+    position: relative;
+    top: -4px;
+}
+
+.second_row {
+    margin-top: 52px;
+}
