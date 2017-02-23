@@ -9,6 +9,8 @@
 
 }
 
+/*HEADER*/
+
 .header {
     width: 264px;
     height: 155px;
@@ -20,6 +22,7 @@
     margin-right: 14px;
 }
 
+/*CONTENT*/
 
 .content {
     box-sizing: border-box;
@@ -73,6 +76,21 @@ figcaption {
     top: -4px;
 }
 
+/*SECOND ROW*/
+
 .second_row {
     margin-top: 52px;
+}
+
+/*FOOTER*/
+
+footer {
+    position: absolute;
+    width: 820px;
+    bottom: 30px;
+    color: #e6e6e6;
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 10.16px;
+    line-height: 1.1em;
 }
