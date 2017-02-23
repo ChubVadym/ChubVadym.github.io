@@ -123,9 +123,11 @@ footer {
     line-height: 40px;
     background-color: #e1e1e1;
 }
+
 .footer ul {
     width: 500px;
 }
+
 .footer li {
     display: inline-block;
     width: 96px;
