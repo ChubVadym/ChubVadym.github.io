@@ -81,3 +81,35 @@
 .toolbar a:hover {
     color: #2c2c2c;
 }
+
+/*CONTENT*/
+
+.content_box {
+    margin-left: 288px;
+}
+
+.img_box {
+    box-sizing: border-box;
+    width: 678px;
+    height: 400px;
+    border: 1px solid #c8c8c8;
+    text-align: center;
+}
+
+.goods {
+    margin-top: 47px; /*Какие есть способы вертикального выравнивания?*/
+    width: 500px;
+    height: 307px;
+    top: 50%;
+    left: 50%;
+}
+
+.content {
+    margin-top: 40px;
+    box-sizing: border-box;
+    width: 678px;
+    /*height: 200px;*/
+    padding: 0px 30px 0px 24px;
+    line-height: 21.33px;
+    font-size: 13.33px;
+}
