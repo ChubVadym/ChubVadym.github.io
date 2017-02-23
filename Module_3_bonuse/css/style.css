@@ -1,0 +1,21 @@
+.wrapper {
+    padding: 57px 72px 31px 71px;
+    background: url("../img/main_background.jpg") no-repeat;
+    width: 960px;
+    height: 883px;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+
+}
+
+.header {
+    width: 264px;
+    height: 155px;
+}
+
+.contacts {
+    margin-top: 95px;
+    float: right;
+    margin-right: 14px;
+}
