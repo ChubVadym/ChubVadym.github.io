@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+p {
+    margin: 10px;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 45px;
+    width: 1024px;
+    height: 1024px;
+    background-image: url("../img/MainBG.png");
+    font-size: 16px;
+}
+
+.myphoto {
+    margin: 24px 0 17px 0;
+    text-align: center;
+}
+
+.photocard {
+    border: 1px solid #8f8f8f;
+}
+
+.information {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.autograph {
+    margin-bottom: 19px;
+    text-align: left;
+    font-size: 14px;
+    color: #1f1f1f;
+}
+
+.because, .contacts {
+    margin: auto;
+    padding: 18px 0px 20px 0px;
+    border-top: 1px solid #1f1f1f; /*в фотошопе рамки прозрачные 20% как сделать это сдесь?*/
+}
+
+.contacts {
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 18px;
+    color: #1f1f1f;
+}
+
+ul {
+    padding: 17px 0px 0px 34px;
+}
+
+ul li {
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.because p, .contacts p {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 14px;
+    padding: 18px 0px 10px 36px;
+    margin: 0px;
+}
