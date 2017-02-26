@@ -62,14 +62,13 @@ html {
 }
 
 .toolbar li {
-    border-bottom: 1px solid #c8c8c8;
     height: 40px;
     line-height: 40px;
     padding-left: 24px;
-    width: 240px;
+    /*width: 240px;*/
 }
 
-.toolbar li:last-child { /*Убирание двойной рамки*/
+.toolbar a:last-child { /*Убирание двойной рамки*/
     border-bottom: none;
 }
 
@@ -80,7 +79,8 @@ html {
 
 .toolbar a {
     color: #656363;
-    display: block; /* Как сделать чтоб ссылка заходила на Padding?*/
+    border-bottom: 1px solid #c8c8c8;
+    display: block;
     text-decoration: none;
 
 }
@@ -127,7 +127,6 @@ footer {
     line-height: 40px;
     background-color: #e1e1e1;
 }
-
 
 .footer-nav {
     width: 700px;
