@@ -64,7 +64,6 @@ html {
 .toolbar li {
     height: 40px;
     line-height: 40px;
-    padding-left: 24px;
     border-bottom: 1px solid #c8c8c8;
     /*width: 240px;*/
 }
@@ -75,10 +74,10 @@ html {
 
 .toolbar li:hover { /* отступ при наведении*/
     background-color: #f9f9f9;
-    padding-left: 36px;
 }
 
 .toolbar a {
+    padding-left: 24px;
     color: #656363;
     display: block;
     text-decoration: none;
@@ -86,6 +85,7 @@ html {
 }
 
 .toolbar a:hover {
+    padding-left: 36px;
     color: #2c2c2c;
 }
 
