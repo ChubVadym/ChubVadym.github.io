@@ -1,0 +1,98 @@
+body {
+    background-image: url("../img/body_bg.png");
+    background-repeat: repeat-x;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/*HEADER*/
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+header {
+    padding: 10px 30px 0px 28px;
+}
+
+.contacts {
+    float: right;
+    font-size: 12px;
+    color: #128aa7;
+}
+
+.contacts h2 {
+    padding-bottom: 5px;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.contacts p {
+    line-height: 1.5em;
+}
+
+.countries {
+    float: right;
+    font-size: 10px;
+    clear: right;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    }
+
+.countries ul li {
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+
+.countries ul li a {
+    display: block;
+    width: 53px;
+    padding-top: 44px;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    font-size: 10px;
+    color: #128aa7;
+    text-decoration: underline;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.india {
+    background-image: url("../img/i_flag.png");
+}
+
+.nepal {
+    background-image: url("../img/n_flag.png");
+}
+
+.tibet {
+    background-image: url("../img/t_flag.png");
+}
+
+.butah {
+    background-image: url("../img/b_flag.png");
+}
+
+.shri-lanka {
+    background-image: url("../img/s_flag.png");
+}
+
+.maldives {
+    background-image: url("../img/m_flag.png");
+}
