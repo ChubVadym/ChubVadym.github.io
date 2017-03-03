@@ -20,6 +20,9 @@ ul {
     width: 1000px;
     margin: 0 auto;
     background-color: #ffffff;
+    -webkit-box-shadow: -1px 3px 16px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 3px 16px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 16px -1px rgba(0,0,0,0.75);
 }
 
 header {
@@ -35,7 +38,7 @@ header {
 .contacts h2 {
     padding-bottom: 5px;
     font-size: inherit;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .contacts p {
@@ -95,4 +98,10 @@ header {
 
 .maldives {
     background-image: url("../img/m_flag.png");
+}
+
+/*MAIN_PHOTO*/
+
+.front_img {
+    margin-top: 1px;
 }
