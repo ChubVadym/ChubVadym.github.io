@@ -22,6 +22,7 @@ ul {
     width: 1000px;
     margin: 0 auto;
     background-color: #ffffff;
+    overflow: hidden;
     border-bottom: 3px solid #031d28;
     -webkit-box-shadow: -1px 3px 16px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 3px 16px -1px rgba(0, 0, 0, 0.75);
@@ -111,16 +112,18 @@ header {
 
 /*NAVIGATION MENU*/
 
-ul.menu {
-    float: left; /*для того чтоб тень заходила на плавающие колонки*/
+.menu {
+    float: left; /*для того чтоб тень заходила на плавающие колонки (до растягивания колонок работало)*/
     width: 100%;
     background-image: url("../img/Nav_bg1.png");
     background-repeat: repeat-x;
     background-color: #303030;
     border-bottom: 1px solid black;
-    -webkit-box-shadow: -1px 3px 16px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 3px 16px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 3px 16px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 3px 11px 3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 3px 11px 3px rgba(0,0,0,0.65);
+    box-shadow: 0px 3px 11px 3px rgba(0,0,0,0.65);
+    z-index: 2;
+
 }
 
 .menu > li {
@@ -128,6 +131,8 @@ ul.menu {
     position: relative;
     width: 14.28%;
     line-height: 1.5em;
+    z-index: 1;
+
 }
 
 .menu li a {
@@ -142,9 +147,7 @@ ul.menu {
 .down {
     font-size: 0.5em;
     position: absolute;
-    top: 10px;
-    /*left: 2px;*/
-
+    top: 6px;
 }
 
 ul.submenu {
@@ -152,6 +155,10 @@ ul.submenu {
     position: absolute;
     width: 150px;
     /*top: 37px;*/
+    -webkit-box-shadow: 0px 3px 11px 3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 3px 11px 3px rgba(0,0,0,0.65);
+    box-shadow: 0px 3px 11px 3px rgba(0,0,0,0.65);
+    z-index: 1;
 }
 
 ul.submenu li {
@@ -165,16 +172,56 @@ ul.menu > li:hover > ul.submenu {
 
 /*SIDEBAR & NEWS*/
 
-.sidebar, .news {
-    padding: 12px 22px 12px 15px;
-    width: 21%;
-    background-color: #edeef0;
-    color: #424c43;
-    border: 1px solid #c7cacf;
+.container {
+    /*margin-top: 40px;*/
+    float: left;
+    border-right: 1px solid #c7cacf;
+    border-left: 1px solid #c7cacf;
+}
+
+.fon1 {
+    width: 100%;
+    background: #edeef0;
+    float: left;
+    position: relative;
+    right: 58%;
+    border-right: 1px solid #c7cacf;
+}
+
+.fon2 {
+    width: 100%;
+    background: #ffffff;
+    float: left;
+    position: relative;
+    right: 21%;
+    border-right: 1px solid #c7cacf;
+}
+
+.fon3 {
+    width: 100%;
+    background: #edeef0;
+    float: left;
 }
 
 .sidebar {
     float: left;
+    /*overflow: hidden;*/
+    position: relative;
+    left: 79%;
+}
+
+.news {
+    /*width: 39%;*/
+    float: left;
+    /*overflow: hidden;*/
+    position: relative;
+    left: 79%;
+}
+
+.sidebar, .news {
+    padding: 12px 22px 12px 15px;
+    width: 21%;
+    color: #424c43;
 }
 
 .sidebar > h2, .news > h2 {
@@ -187,17 +234,16 @@ ul.menu > li:hover > ul.submenu {
     font-size: 14px;
 }
 
-.news {
-    float: right;
-}
-
 /*CONTENT*/
 
 .content {
-    float: left;
     width: 58%;
+    float: left;
     padding: 15px;
+    overflow: hidden;
+    position: relative;
     text-align: justify;
+    left: 79%;
 }
 
 /*FOOTER*/
