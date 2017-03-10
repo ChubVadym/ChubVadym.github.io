@@ -181,7 +181,8 @@ ul.menu > li:hover > ul.submenu {
     justify-content: space-between;
 }
 
-.sidebar, .news {
+.sidebar,
+.news {
     padding: 12px 22px 12px 15px;
     width: 21%;
     border: 1px solid #c7cacf;
