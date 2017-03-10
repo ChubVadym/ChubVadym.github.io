@@ -177,53 +177,15 @@ ul.menu > li:hover > ul.submenu {
 /*SIDEBAR & NEWS*/
 
 .container {
-    overflow: hidden;
-    border-right: 1px solid #c7cacf;
-    border-left: 1px solid #c7cacf;
-}
-
-.fon1 {
-    width: 100%;
-    background: #edeef0;
-    float: left;
-    position: relative;
-    right: 58%;
-    border-right: 1px solid #c7cacf;
-}
-
-.fon2 {
-    width: 100%;
-    background: #ffffff;
-    float: left;
-    position: relative;
-    right: 21%;
-    border-right: 1px solid #c7cacf;
-}
-
-.fon3 {
-    width: 100%;
-    background: #edeef0;
-    float: left;
-}
-
-.sidebar {
-    float: left;
-    /*overflow: hidden;*/
-    position: relative;
-    left: 79%;
-}
-
-.news {
-    /*width: 39%;*/
-    float: left;
-    /*overflow: hidden;*/
-    position: relative;
-    left: 79%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sidebar, .news {
     padding: 12px 22px 12px 15px;
     width: 21%;
+    border: 1px solid #c7cacf;
+    background: #edeef0;
     color: #424c43;
 }
 
@@ -241,12 +203,8 @@ ul.menu > li:hover > ul.submenu {
 
 .content {
     width: 58%;
-    float: left;
     padding: 15px;
-    overflow: hidden;
-    position: relative;
     text-align: justify;
-    left: 79%;
     word-break: normal;
 }
 
