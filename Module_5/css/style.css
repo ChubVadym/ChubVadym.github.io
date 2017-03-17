@@ -60,10 +60,13 @@ body {
 
 .menu > ul {
     /*height: 100%;*/
+    width: 40%;
+    float: right;
+    overflow: hidden;
 }
 
 .menu > ul > li {
-    padding: 0 10px;
+    width: 20%;
 }
 
 .menu > ul > li:hover {
@@ -75,6 +78,7 @@ body {
 .menu > ul > li > a {
     display: block;
     width: 100%;
+    /*padding: 0 10px;*/
 }
 
 .ola {
@@ -196,6 +200,7 @@ legend {
     width: 151px;
     margin-top: 15px;
     border: 0px;
+    border-radius: 5px;
     background-image: url("../img/submit.png");
     background-repeat: no-repeat;
     line-height: 35px;
