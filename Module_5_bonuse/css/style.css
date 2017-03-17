@@ -34,17 +34,9 @@ body {
     font-family: helvetica, Arial, sans-serif;
 }
 
-.container {
-    display: flex;
-    /*flex-direction: column;*/
-
-}
-
 .wrapper {
-    /*width: 1215px;*/
-    /*height: 1028px;*/
-    flex-basis: 1215px;
-    /*flex-grow: 1;*/
+    width: 1215px;
+    height: 1028px;
     margin: 0 auto;
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
@@ -126,7 +118,7 @@ a {
 
 .cadastre {
     display: flex;
-    /*height: 100%;*/
+    height: 100%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
