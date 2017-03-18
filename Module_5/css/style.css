@@ -32,21 +32,16 @@
 body {
     box-sizing: border-box;
     font-family: helvetica, Arial, sans-serif;
+    background: #e5f0f2 url("../img/background.jpg") no-repeat fixed center;
 }
 
 .container {
 }
 
 .wrapper {
-    width: 1215px;
-    /*height: 1028px;*/
     display: flex;
     flex-direction: column;
-    min-height: 157vh;
-    /*flex-basis: 1215px;*/
-    margin: 0 auto;
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 /*NAVIGATION MENU*/
@@ -66,7 +61,6 @@ body {
 }
 
 .menu > ul {
-    /*height: 100%;*/
     width: 40%;
     float: right;
     overflow: hidden;
@@ -85,7 +79,6 @@ body {
 .menu > ul > li > a {
     display: block;
     width: 100%;
-    /*padding: 0 10px;*/
 }
 
 .ola {
