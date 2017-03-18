@@ -32,7 +32,8 @@
 body {
     box-sizing: border-box;
     font-family: helvetica, Arial, sans-serif;
-    background: #e5f0f2 url("../img/background.jpg") no-repeat fixed center;
+    background: #e5f0f2 url("../img/background.jpg")  no-repeat fixed center;
+    background-size: 100%;
 }
 
 .container {
