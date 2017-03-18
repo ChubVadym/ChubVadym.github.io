@@ -17,7 +17,6 @@
 
 }
 
-
 *, *:before, *:after {
     box-sizing: inherit;
     word-break: break-all;
@@ -32,7 +31,7 @@
 body {
     box-sizing: border-box;
     font-family: helvetica, Arial, sans-serif;
-    background: #e5f0f2 url("../img/background.jpg")  no-repeat fixed center;
+    background: #e5f0f2 url("../img/background.jpg") no-repeat fixed center;
     background-size: 100%;
 }
 
@@ -115,6 +114,10 @@ a {
     color: white;
 }
 
+.flag > a {
+    display: block;
+}
+
 /*CADASTRE-SE*/
 
 .cadastre {
@@ -122,12 +125,10 @@ a {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    /*padding: 183px;*/
-    height: 100%;
     flex-direction: column;
     align-content: center;
-    overflow: auto;
 }
+
 .cadastre_head,
 .form_container {
     background-color: rgba(0, 0, 0, 0.63);
@@ -151,8 +152,13 @@ h2 {
     text-align: center;
 }
 
-.facebook > img {
-    margin-bottom: 34px;
+.facebook {
+    display: block;
+    width: 276px;
+    height: 35px;
+    margin: 0 auto 34px auto;
+    border-radius: 3px;
+    background-image: url("../img/fb.png");
 }
 
 fieldset {
@@ -164,20 +170,34 @@ fieldset {
 input {
     background-color: #100f0f;
     border-color: transparent;
-    -webkit-input-placeholder {color:#cccccc;}
-    -moz-placeholder          {color:#cccccc;}/* Firefox 19+ */
-    -moz-placeholder           {color:#cccccc;}/* Firefox 18- */
-    -ms-input-placeholder      {color:#cccccc;}
+
+-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+-moz-placeholder {
+    color: #cccccc;
+}
+
+/* Firefox 19+ */
+-moz-placeholder {
+    color: #cccccc;
+}
+
+/* Firefox 18- */
+-ms-input-placeholder {
+    color: #cccccc;
+}
+
 }
 
 .form_text:focus {
     outline: none;
     background-image: url("../img/form_bg.png");
-    -webkit-box-shadow: 0px 0px 21px 2px rgba(78,171,218,1);
-    -moz-box-shadow: 0px 0px 21px 2px rgba(78,171,218,1);
-    box-shadow: 0px 0px 21px 2px rgba(78,171,218,1);
+    -webkit-box-shadow: 0px 0px 21px 2px rgba(78, 171, 218, 1);
+    -moz-box-shadow: 0px 0px 21px 2px rgba(78, 171, 218, 1);
+    box-shadow: 0px 0px 21px 2px rgba(78, 171, 218, 1);
 }
-
 
 .form_text {
     width: 100%;
@@ -210,9 +230,9 @@ legend {
     color: white;
 }
 
-footer {
+.footer {
     margin-top: 10px;
-    padding: 0 125px;
+    /*padding: 0 125px;*/
     line-height: 16px;
     font-size: 11px;
     color: #cccccc;
