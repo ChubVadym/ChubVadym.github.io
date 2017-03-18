@@ -35,16 +35,15 @@ body {
 }
 
 .container {
-    display: flex;
-    /*flex-direction: column;*/
-
 }
 
 .wrapper {
-    /*width: 1215px;*/
+    width: 1215px;
     /*height: 1028px;*/
-    flex-basis: 1215px;
-    /*flex-grow: 1;*/
+    display: flex;
+    flex-direction: column;
+    min-height: 157vh;
+    /*flex-basis: 1215px;*/
     margin: 0 auto;
     background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
@@ -126,10 +125,12 @@ a {
 
 .cadastre {
     display: flex;
-    /*height: 100%;*/
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /*padding: 183px;*/
+    height: 100%;
+    flex-direction: column;
     align-content: center;
     overflow: auto;
 }
