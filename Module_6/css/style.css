@@ -300,7 +300,8 @@ a.lost-pass {
 
 .left-bar {
     float: left;
-    width: 192px;
+    /*width: 192px;*/
+    margin-right: 10px;
     font-family: "Lucida Sans Unicode", sans-serif;
 }
 
@@ -328,6 +329,7 @@ a.lost-pass {
 
 .catalog, .brand-form {
     list-style: none;
+    line-height: 1.2em;
 }
 
 .catalog h3 {
@@ -371,6 +373,7 @@ a.lost-pass {
     margin-top: 0px;
     text-indent: -2.3px;
     padding-bottom: 2.7px;
+    line-height: 20px;
     list-style: url(../img/bullet-normal.png);
 }
 
@@ -518,18 +521,15 @@ a.lost-pass {
 
 .content {
     float: left;
-    width: 504px;
+    width: 525px;
     height: 627px;
-    margin-top: -1px;
+    padding-top: 14px;
+    padding-right: 14px;
+    padding-left: 7px;
     border-radius: 4px;
     background: -moz-linear-gradient(top, rgba(201, 207, 209, 0.49) 0%, rgba(35, 75, 93, 0.49) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(201, 207, 209, 0.49) 0%, rgba(35, 75, 93, 0.49) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(201, 207, 209, 0.49) 0%, rgba(35, 75, 93, 0.49) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
-.content {
-    width: 525px;
-    padding-right: 20px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -540,11 +540,14 @@ a.lost-pass {
     justify-content: space-around;
 }
 
+.content {
+}
+
 .content-item {
     list-style: none;
-    width: 151px;
-    padding-left: 11px;
-    margin-top: 4px;
+    width: 137px;
+    /*padding-left: 11px;*/
+    /*margin-top: 4px;*/
     font-family: "Lucida Sans Unicode", sans-serif;
     text-align: center;
 }
@@ -553,12 +556,9 @@ a.lost-pass {
     position: relative;
 }
 
-.content-item figure a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
+.content-item > a {
+    display: block;
+    text-decoration: none;
 }
 
 .content-item figure > p {
@@ -593,7 +593,6 @@ a.lost-pass {
 }
 
 .content-item figcaption h4 {
-    margin-top: 12px;
     font-size: 14.59px;
     font-weight: bold;
     color: #206988;
