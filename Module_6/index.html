@@ -2,27 +2,28 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Module_5</title>
+    <title>Module_6</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
     <header class="top-row clearfix">
-        <span class="phones">(044)123-45-67 (044)567-89-10</span>
+        <div class="phones clearfix"><i class="icon-phone"></i>
+            <p>(044)123-45-67 (044)567-89-10</p></div>
         <form action="#" class="login-form">
-            <img src="img/user.png" alt="" class="icon">
+            <i class="user_icon"></i>
             <input type="text" placeholder="логин" class="login-input">
             <input type="text" placeholder="пароль" class="pass-input">
-            <a href="#" class="enter">вход</a> <span> | </span>
-            <a href="#" class="register">регистрация</a>
+            <input class="enter" type="submit" value="вход">
+            <input class="register" type="submit" value="регистрация">
             <a href="#" class="lost-pass">забыли пароль?</a>
         </form>
         <div class="shadowed">
             <div class="btn-group">
-                <a href="#"><img src="img/home.png" alt=""></a>
-                <a href="#"><img src="img/site-map.png" alt=""></a>
-                <a href="#"><img src="img/letter.png" alt=""></a>
+                <a href="#"><i class="home_icon"></i></a>
+                <a href="#"><i class="site_map"></i></a>
+                <a href="#"><i class="letter"></i></a>
             </div>
         </div>
     </header>
@@ -38,7 +39,7 @@
             <li><a href="#">Контакты</a></li>
         </ul>
         <div class="shop-cart">
-            <a href="#" class="cart"><img src="img/cart.png" alt=""></a>
+            <a href="#" class="cart"><i class="cart"></i></a>
             <span class="cart-labels">товаров:</span>
             <span class="cart-data">0</span>
             <span class="cart-labels">на сумму:</span>
@@ -49,8 +50,8 @@
     <div class="middle-row clearfix">
         <aside class="left-bar clearfix">
             <h2 class="catalog-header">каталог продукции:</h2>
-            <ul class="catalog">
-                <li>
+            <div class="catalog">
+                <section>
                     <h3 class="catalog-h3-1">шины</h3>
                     <ul>
                         <li><a href="#">Наименование 1</a></li>
@@ -58,6 +59,8 @@
                         <li><a href="#">Наименование 3</a></li>
                         <li><a href="#">Наименование 4</a></li>
                     </ul>
+                </section>
+                <section>
                     <h3 class="catalog-h3-2">диски</h3>
                     <ul>
                         <li><a href="#">Наименование 1</a></li>
@@ -66,44 +69,42 @@
                         <li><a href="#">Наименование 4</a></li>
                     </ul>
                     <h3 class="catalog-h3-3">болты</h3>
+                </section>
+                <section>
                     <ul>
                         <li><a href="#">Наименование 1</a></li>
                         <li><a href="#">Наименование 2</a></li>
                         <li><a href="#">Наименование 3</a></li>
                         <li><a href="#">Наименование 4</a></li>
                     </ul>
-                </li>
-            </ul>
+                </section>
+            </div>
         </aside>
         <aside class="right-bar">
             <h2 class="brand-header">бренды:</h2>
             <form action="#" class="brand-form">
-                <h3 class="brand-h3-1">шины</h3>
-                <div class="checkbox_wrapper">
-                    <input type="checkbox" id="c1" value="b1">
-                    <label for="c1">Бренд 1</label>
-                </div>
-                <div class="checkbox_wrapper">
-                    <input type="checkbox" id="c2" value="b2">
-                    <label for="c2">Бренд 2</label>
-                </div>
-                <div class="checkbox_wrapper">
-                    <input type="checkbox" id="c3" value="b3">
-                    <label for="c3">Бренд 3</label>
-                </div>
-                <h3 class="brand-h3-2">диски</h3>
-                <div class="checkbox_wrapper">
-                    <input type="checkbox" id="c4" value="b4">
-                    <label for="c4">Бренд 1</label>
-                </div>
-                <div class="checkbox_wrapper">
-                    <input type="checkbox" id="c5" value="b5">
-                    <label for="c5">Бренд 2</label>
-                </div>
-                <div class="checkbox_wrapper">
-                    <input type="checkbox" id="c6" value="b6">
-                    <label for="c6">Бренд 3</label>
-                </div>
+                <section>
+                    <h3 class="brand-h3-1">шины</h3>
+                    <ul>
+                        <li><input type="checkbox" id="c1" value="b1">
+                            <label for="c1">Бренд 1</label></li>
+                        <li><input type="checkbox" id="c2" value="b2">
+                            <label for="c2">Бренд 2</label></li>
+                        <li><input type="checkbox" id="c3" value="b3">
+                            <label for="c3">Бренд 3</label></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 class="brand-h3-2">диски</h3>
+                    <ul>
+                        <li><input type="checkbox" id="c4" value="b4">
+                            <label for="c4">Бренд 1</label></li>
+                        <li><input type="checkbox" id="c5" value="b5">
+                            <label for="c5">Бренд 2</label></li>
+                        <li><input type="checkbox" id="c6" value="b6">
+                            <label for="c6">Бренд 3</label></li>
+                    </ul>
+                </section>
                 <input type="submit" value="ВЫБРАТЬ" class="submit-button">
             </form>
         </aside>
@@ -231,10 +232,10 @@
         </ul>
     </div>
     <footer class="bottom-row">
-        <ul>
-            <li><a href="#">О компании</a><span>|</span></li>
-            <li><a href="#">Доставка</a><span>|</span></li>
-            <li><a href="#">Статьи</a><span>|</span></li>
+        <ul class="clearfix">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Статьи</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
         <p>Создание сайта &copy; <a href="#">Global Vision</a></p>
