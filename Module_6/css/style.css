@@ -110,8 +110,8 @@ html {
     background: transparent;
 }
 
-.enter:after {
-    content: '|';
+.enter {
+    padding-right: 4px;
 }
 
 .register {
@@ -131,7 +131,7 @@ a.lost-pass {
 
 .shadowed {
     float: right;
-    margin-right: 6px;
+    margin-right: 4px;
     position: relative;
     z-index: 0;
 }
@@ -430,7 +430,7 @@ a.lost-pass {
     margin-top: 15px;
 }
 
-.brand-form h3 {
+.brand-form legend {
     box-sizing: border-box;
     width: 136px;
     /*height: 28px;*/
@@ -449,8 +449,12 @@ a.lost-pass {
     line-height: 27px;
 }
 
-.brand-form > section > ul {
+.brand-form > fieldset > ul {
     line-height: 1.6em;
+}
+
+.brand-f-2 {
+    margin-top: 12px;
 }
 
 .submit-button {
@@ -666,7 +670,15 @@ a.lost-pass {
     color: inherit;
 }
 
-footer.bottom-row > ul > li:not(:last-of-type)::after {
-    content: '|';
-    padding-left: 10px;
+.vertical-line::before {
+    display: inline-block;
+    content: "";
+    margin-right: 15px;
+    width: 1px;
+    height: 10px;
+    background-color: #8d989f;
+}
+
+.register:before {
+    margin-right: 3px;
 }

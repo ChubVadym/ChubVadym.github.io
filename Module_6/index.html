@@ -16,14 +16,14 @@
             <input type="text" placeholder="логин" class="login-input">
             <input type="text" placeholder="пароль" class="pass-input">
             <input class="enter" type="submit" value="вход">
-            <input class="register" type="submit" value="регистрация">
+            <a href="#" class="vertical-line register">регистрация</a>
             <a href="#" class="lost-pass">забыли пароль?</a>
         </form>
         <div class="shadowed">
             <div class="btn-group">
-                <a href="#"><i class="home_icon"></i></a>
-                <a href="#"><i class="site_map"></i></a>
-                <a href="#"><i class="letter"></i></a>
+                <a class="home_icon" href="#"></a>
+                <a class="site_map" href="#"></a>
+                <a class="letter" href="#"></a>
             </div>
         </div>
     </header>
@@ -83,28 +83,22 @@
         <aside class="right-bar">
             <h2 class="brand-header">бренды:</h2>
             <form action="#" class="brand-form">
-                <section>
-                    <h3 class="brand-h3-1">шины</h3>
+                <fieldset>
+                    <legend>шины</legend>
                     <ul>
-                        <li><input type="checkbox" id="c1" value="b1">
-                            <label for="c1">Бренд 1</label></li>
-                        <li><input type="checkbox" id="c2" value="b2">
-                            <label for="c2">Бренд 2</label></li>
-                        <li><input type="checkbox" id="c3" value="b3">
-                            <label for="c3">Бренд 3</label></li>
+                        <li><label><input type="checkbox" id="c1" value="b1">Бренд 1</label></li>
+                        <li><label><input type="checkbox" id="c2" value="b2">Бренд 2</label></li>
+                        <li><label><input type="checkbox" id="c3" value="b3">Бренд 3</label></li>
                     </ul>
-                </section>
-                <section>
-                    <h3 class="brand-h3-2">диски</h3>
+                </fieldset>
+                <fieldset class="brand-f-2">
+                    <legend>диски</legend>
                     <ul>
-                        <li><input type="checkbox" id="c4" value="b4">
-                            <label for="c4">Бренд 1</label></li>
-                        <li><input type="checkbox" id="c5" value="b5">
-                            <label for="c5">Бренд 2</label></li>
-                        <li><input type="checkbox" id="c6" value="b6">
-                            <label for="c6">Бренд 3</label></li>
+                        <li><label><input type="checkbox" id="c4" value="b4">Бренд 1</label></li>
+                        <li><label><input type="checkbox" id="c5" value="b5">Бренд 2</label></li>
+                        <li><label><input type="checkbox" id="c6" value="b6">Бренд 3</label></li>
                     </ul>
-                </section>
+                </fieldset>
                 <input type="submit" value="ВЫБРАТЬ" class="submit-button">
             </form>
         </aside>
@@ -234,9 +228,9 @@
     <footer class="bottom-row">
         <ul class="clearfix">
             <li><a href="#">О компании</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Статьи</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="vertical-line"><a href="#">Доставка</a></li>
+            <li class="vertical-line"><a href="#">Статьи</a></li>
+            <li class="vertical-line"><a href="#">Контакты</a></li>
         </ul>
         <p>Создание сайта &copy; <a href="#">Global Vision</a></p>
     </footer>
