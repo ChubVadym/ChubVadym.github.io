@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media {
 
     body {
         background: url("../img/main_bg_320.jpg.") no-repeat fixed 0px 0px;
@@ -7,7 +7,6 @@
     .wrapper {
         min-width: 320px;
         max-width: 480px;
-
     }
 
     .header-logo {
@@ -52,9 +51,6 @@
         display: block;
     }
 
-    /*.menu__list:hover {*/
-    /*display: block;*/
-    /*}*/
     .menu__link {
         display: block;
         text-shadow: none;
@@ -73,7 +69,7 @@
     /*------ SLIDER -------*/
     .slider__content {
         position: relative;
-        width: 320px;
+        /*width: 320px;*/
         margin: 120px auto 0 auto;
         font-family: "League Gothic Regular", Arial, sans-serif;
     }
@@ -403,6 +399,14 @@
 
     .logo_6 {
         background-position: -630px 0;
+    }
+
+    .news-row {
+        display: none;
+    }
+
+    .navi {
+        display: none;
     }
 
     /*------------FOOTER----------------*/

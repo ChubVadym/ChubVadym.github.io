@@ -1,0 +1,165 @@
+@media ( min-width: 480px) {
+
+    body {
+        background: url("../img/main_bg_480.jpg.") no-repeat fixed 0px 0px;
+    }
+
+    .wrapper {
+        min-width: 481px;
+        max-width: 760px;
+    }
+
+    .slider {
+        position: relative;
+        width: 100%;
+        margin-top: 26px;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-family: league_gothicCnRg, "League Gothic Regular", sans-serif;
+    }
+
+    .slider__content {
+        position: relative;
+        padding-bottom: 104px;
+        padding-top: 100px;
+        width: 100%;
+        margin: 0px auto;
+        /*max-width: 960px;*/
+    }
+
+    .slider__image {
+        display: block;
+        position: absolute;
+        top: -9px;
+        left: 50%;
+        width: 192px;
+        height: 303px;
+        background: url(../img/IPhone480.png), no-repeat;
+        background-size: contain;
+        z-index: 0;
+    }
+
+    .slider__article {
+        position: relative;
+        margin: 0;
+        padding-left: 12%;
+        width: 61%;
+        font-size: 32px;
+        z-index: 1;
+    }
+
+    .slider__left-arrow a {
+        top: 103px;
+        left: 29px;
+    }
+
+    .slider__right-arrow a {
+        top: 101px;
+        right: 23px;
+    }
+
+    .slider__selector {
+        position: absolute;
+        top: 250px;
+        left: 253px;
+    }
+
+    .top-row {
+        margin-top: 100px;
+        padding-left: 34px;
+        padding-right: 120px;
+    }
+
+    .row-content {
+        max-width: 100%;
+        padding-top: 75px;
+    }
+
+    .row-content__link {
+        padding-left: 64%;
+    }
+
+    .row-content__p {
+        margin-bottom: 13px;
+        padding-right: 50px;
+    }
+
+    .slides_white {
+        padding-left: 71px;
+        padding-top: 70px;
+    }
+
+    .slide-header h2,
+    .slide-header h3 {
+        display: inline;
+        font-size: 28px;
+    }
+
+    .slides_white__p {
+        padding-right: 153px;
+    }
+
+    .slider__selector-white {
+        top: 24px;
+        right: 287px;
+    }
+
+    .middle-row {
+        padding: 94px 11px 92px 139px;
+    }
+
+    .middle-row-content ul li {
+        padding-right: 73px;
+    }
+
+    .news-row {
+        background-color: #ececec;
+        border-top: 1px solid #d8d8d8;
+    }
+
+    .news-categories {
+        padding-bottom: 73px;
+    }
+
+    .news-categories-container {
+        display: flex;
+        flex-direction: column;
+        padding: 81px 88px 0px 126px;
+    }
+
+    .news-categories__header {
+        font-weight: bold;
+        font-family: "league_gothicregular", Arial, sans-serif;
+        font-size: 24px;
+    }
+
+    .news-categories__text {
+        font-family: "Open Sans", Arial, sans-serif;
+        padding-top: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+        max-height: 100px;
+        overflow: hidden;
+    }
+
+    footer {
+        background: url("../img/footer_bg-960.jpg");
+        padding: 45px 50px 80px 54px;
+    }
+
+    .navi {
+        display: flex;
+        text-transform: uppercase;
+        justify-content: space-around;
+        font-family: "league_gothicregular", Arial, sans-serif;
+        font-size: 22px;
+    }
+
+    .menu_item_a {
+        text-decoration: none;
+        color: white;
+    }
+
+    footer p {
+        padding-top: 36px;
+    }
+}

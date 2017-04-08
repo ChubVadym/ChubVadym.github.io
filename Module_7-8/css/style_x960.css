@@ -54,19 +54,9 @@ body {
 
 /*SLIDER*/
 
-.slider {
-    position: relative;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    font-family: league_gothicCnRg, "League Gothic Regular", sans-serif;
-}
 
-.slider__content {
-    position: relative;
-    padding-bottom: 67px;
-    width: 100%;
-    margin: 169px auto;
-    max-width: 960px;
+
+
 }
 
 .slider__article {
@@ -105,14 +95,7 @@ body {
     font-family: "League Gothic Regular", sans-serif;
 }
 
-.slider__image {
-    position: absolute;
-    top: -17px;
-    right: 66px;
-    width: 274px;
-    height: 434px;
-    background-image: url(../img/IPhone.png);
-}
+
 
 /*.slider__left-arrow a {*/
     /*position: absolute;*/
