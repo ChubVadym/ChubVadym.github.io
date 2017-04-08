@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Module 7-8</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style_x960.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_320.css">
+    <!--<link rel="stylesheet" href="css/style_x960.css">-->
 </head>
 <body>
 <div class="wrapper">
@@ -13,17 +18,20 @@
             <p class="header-logo__p shadow-bottom">Pingbull<span class="header-logo__span">er</span></p>
         </div>
         <ul class="menu__list">
-            <li class="menu__item"><a href="#" class="menu__link shadow-bottom">Home</a></li>
-            <li class="menu__item"><a href="#" class="menu__link shadow-bottom">About</a></li>
-            <li class="menu__item"><a href="#" class="menu__link shadow-bottom">Blog</a></li>
-            <li class="menu__item"><a href="#" class="menu__link shadow-bottom">Products</a></li>
-            <li class="menu__item"><a href="#" class="menu__link shadow-bottom">Lorem ipsum</a></li>
-            <li class="menu__item"><a href="#" class="menu__link shadow-bottom">Dolor sit amet</a></li>
+            <li class="menu__item"><a href="#" class="menu__link shadow-bottom">Home</a>
+                <ul class="drop">
+                    <li class="menu__item_drop"><a href="#" class="menu__link shadow-bottom">About</a></li>
+                    <li class="menu__item_drop"><a href="#" class="menu__link shadow-bottom">Blog</a></li>
+                    <li class="menu__item_drop"><a href="#" class="menu__link shadow-bottom">Products</a></li>
+                    <li class="menu__item_drop"><a href="#" class="menu__link shadow-bottom">Lorem ipsum</a></li>
+                    <li class="menu__item_drop"><a href="#" class="menu__link shadow-bottom">Dolor sit amet</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <div class="slider">
         <div class="slider__content">
-            <article class="slider__article">
+            <article class="slider__article text-shadow">
                 <h2 class="slider__h2">Lorem Ipsum Dolor</h2>
                 <h3 class="slider__h3">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
                 <p class="slider__p">
@@ -48,6 +56,71 @@
             </nav>
         </div>
     </div>
-</div>
+    <div class="top-row">
+        <div class="row-content text-shadow">
+            <div class="row-content__block">
+                <i class="row-content__icon1"></i>
+                <h2 class="row-content__h2">ABOUT OUR COMPANY</h2>
+                <p class="row-content__p">
+                    Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget
+                    nisi convallis auctor. Nam
+                    <!--ОБРЕЗАТЬ ТЕКСТ 320-->
+                </p>
+                <a href="#" class="row-content__link">READ MORE</a>
+            </div>
+            <div class="row-content__block">
+                <i class="row-content__icon2"></i>
+                <h2 class="row-content__h2">ABOUT OUR COMPANY</h2>
+                <p class="row-content__p">
+                    Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget
+                    nisi convallis auctor. Nam
+                </p>
+                <a href="#" class="row-content__link">READ MORE</a>
+            </div>
+            <div class="row-content__block">
+                <i class="row-content__icon3"></i>
+                <h2 class="row-content__h2">ABOUT OUR COMPANY</h2>
+                <p class="row-content__p">
+                    Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
+                    Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget
+                    nisi convallis auctor. Nam
+                </p>
+                <a href="#" class="row-content__link">READ MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="slides_white">
+        <div class="slides_white-container-text">
+            <div class="photo">
+                <img src="img/foto.png" alt="photo">
+            </div>
+            <h2 class="slides_white__h2">pingbuller</h2>
+            <h3 class="slides_white__h3">starts here</h3>
+            <p class="slides_white__p">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus
+                ultrices posuere.
+                Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinarurna
+                risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat
+                dignissim non eu nisl.”</span>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="middle-row">
+        <div class="middle-row-content">
+            <div class="middle-row-content__block">
+                <h2 class="middle-row-content__h2">RECENT UPDATES</h2>
+                <h3 class="middle-row-content__h3">
+                    <a class="middle-row-content__link" href="#">Nunc turpis neque feugiat eget</a>
+                </h3>
+                <p class="middle-row-content__p">
+                    Posted by Admin on March 13 2012 in Recent News
+                </p>
+                <a href="#" class="row-content__link">READ MORE</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

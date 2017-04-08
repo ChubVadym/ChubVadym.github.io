@@ -10,64 +10,35 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'league_gothicCnRg';
-    src: url('leaguegothic-condensedregular-webfont.woff2') format('woff2'),
-    url('leaguegothic-condensedregular-webfont.woff') format('woff'),
-    url('leaguegothic-condensedregular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/*@font-face {*/
+    /*font-family: 'league_gothicCnRg';*/
+    /*src: url('leaguegothic-condensedregular-webfont.woff2') format('woff2'),*/
+    /*url('leaguegothic-condensedregular-webfont.woff') format('woff'),*/
+    /*url('leaguegothic-condensedregular-webfont.ttf') format('truetype');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-    word-break: break-all;
-}
-
-.clearfix:after {
-    content: "";
-    clear: both;
-    display: block;
-}
 
 body {
-    background: url("../img/main_bg.jpg") no-repeat fixed center -500px;
+    background: url("../img/main_bg.jpg") no-repeat fixed -317px -515px;
 }
 
 .wrapper {
+    width: 100%;
 }
 
 .menu {
-    width: 960px;
-    margin: 0 auto;
-    margin-top: 70px;
-    font-family: "League Gothic Regular";
-    text-transform: uppercase;
-    line-height: 36px;
+    /*width: 960px;*/
+
+    /*font-family: "League Gothic Regular";*/
+
 }
 
-.header-logo {
-    float: left;
-    color: white;
-    font-size: 48px;
-}
 
-.shadow-bottom {
-    text-shadow: 0px 2px 5px black;
-}
 
-.header-logo__span {
-    background: linear-gradient(to top, #745083, #33263a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-}
+
+
 
 .menu__list {
     padding-left: 172px;
@@ -79,38 +50,27 @@ body {
     /*text-align: center;*/
 }
 
-.menu__link {
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-}
 
-.menu__link:hover {
-    border-bottom: 2px solid #edbfff;
-}
 
 /*SLIDER*/
 
 .slider {
     position: relative;
     width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    font-family: league_gothicCnRg, "League Gothic", sans-serif;
+    font-family: league_gothicCnRg, "League Gothic Regular", sans-serif;
 }
 
 .slider__content {
     position: relative;
+    padding-bottom: 67px;
     width: 100%;
-    height: 100%;
     margin: 169px auto;
     max-width: 960px;
 }
 
 .slider__article {
     box-sizing: border-box;
-    overflow-y: hidden;
-    height: 100%;
     margin-left: -1px;
     margin-right: 440px;
     padding-top: 90px;
@@ -142,31 +102,101 @@ body {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: -0.09px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "League Gothic Regular", sans-serif;
 }
 
 .slider__image {
-    position: relative;
-    top: -349px;
-    right: -619px;
+    position: absolute;
+    top: -17px;
+    right: 66px;
     width: 274px;
     height: 434px;
     background-image: url(../img/IPhone.png);
 }
 
-.slider__left-arrow a {
-    position: absolute;
-    top: 179px;
-    left: -321px;
-    width: 30px;
-    height: 42px;
-    background-image: url(../img/left-arrow.png);
+/*.slider__left-arrow a {*/
+    /*position: absolute;*/
+    /*top: 178px;*/
+    /*left: -320px;*/
+    /*width: 30px;*/
+    /*height: 42px;*/
+    /*background-image: url(../img/left-arrow.png);*/
+/*}*/
+/*.slider__right-arrow a {*/
+    /*position: absolute;*/
+    /*top: 178px;*/
+    /*right: -321px;*/
+    /*width: 27px;*/
+    /*height: 42px;*/
+    /*background-image: url(../img/right-arrow.png);*/
+/*}*/
+
+/*.slider__selector {*/
+    /*position: absolute;*/
+    /*bottom: -109px;*/
+    /*right: 163px;*/
+    /*width: 87px;*/
+    /*height: 16px;*/
+    /*!*background-color: red;*!*/
+    /*background-image: url(../img/slider-selector.png);*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+/*.slider__selector-item {*/
+    /*float: left;*/
+    /*width: 19px;*/
+    /*height: 19px;*/
+    /*margin-right: 2px;*/
+    /*margin-top: -1px;*/
+/*}*/
+
+/*.slider__selector-item--selected {*/
+    /*background-image: url(../img/slider-selected.png);*/
+/*}*/
+
+
+/*.slider__selector {*/
+    /*position: absolute;*/
+    /*bottom: -109px;*/
+    /*right: 168px;*/
+    /*width: 87px;*/
+    /*height: 16px;*/
+    /*background-image: url(../img/slider-selector.png);*/
+    /*background-repeat: no-repeat;*/
+/*}*/
+
+
+/*TOP ROW*/
+
+
+/*.row-content {*/
+    /*max-width: 962px;*/
+    /*margin: 0 auto;*/
+    /*padding-top: 76px;*/
+    /*padding-bottom: 65px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+/*}*/
+
+
+/*.row-content__h2 {*/
+    /*font-size: 30px;*/
+/*}*/
+
+/*.row-content__p {*/
+    /*padding-top: 10px;*/
+    /*line-height: 1.5em;*/
+    /*font-family: Arial, sans-serif;*/
+    /*font-weight: 400;*/
+    /*word-break: normal;*/
+/*}*/
+
+.row-content__link {
+    /*padding-left: 122px;*/
+    color: white;
+    text-decoration: none;
 }
-.slider__right-arrow a {
-    position: absolute;
-    top: 179px;
-    right: -322px;
-    width: 27px;
-    height: 42px;
-    background-image: url(../img/right-arrow.png);
+
+.row-content__link:hover {
+    text-shadow: 0px 0px 10px white;
 }
