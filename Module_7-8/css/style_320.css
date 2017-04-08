@@ -1,7 +1,7 @@
 @media (max-width: 480px) {
 
     body {
-        background: url("../img/main_bg_320.jpg.") no-repeat fixed 0px 0px; /*Почему прыгает фон?*/
+        background: url("../img/main_bg_320.jpg.") no-repeat fixed 0px 0px;
     }
 
     .wrapper {
@@ -87,9 +87,9 @@
     }
 
     .slider__h2 {
-        font-size: 35px;
-        word-spacing: -8.2px;
-        letter-spacing: -6px; /*   Как изменить ширину букв?  */
+        font-size: 28px;
+        word-spacing: -2.2px;
+        letter-spacing: -2px;
     }
 
     .slider__h3 {
@@ -97,7 +97,8 @@
         text-overflow: clip; /*Как обрезать текст ?*/
         color: #edbfff;
         margin-top: 4px;
-        font-size: 18px;
+        font-size: 11px;
+        letter-spacing: -0.8px;
     }
 
     .slider__p {
@@ -127,31 +128,73 @@
     }
 
     .slider__selector {
+        margin-top: 20px;
+    }
+
+    .slider__selector__label {
+        float: right;
+        margin-right: 5px;
+    }
+
+    .radio {
+        display: none;
+    }
+
+    .radio-custom {
+        display: block;
+        width: 17px;
+        height: 17px;
+        /*border: 2px solid #ccc;*/
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 3px;
+        position: relative;
+    }
+    .radio-custom, {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .radio:checked + .radio-custom::before {
+        content: "";
+        display: block;
         position: absolute;
-        bottom: -92px;
-        right: 110px;
-        width: 87px;
-        height: 16px;
-        /*background-color: red;*/
-        background-image: url(../img/slider-selector.png);
-        background-repeat: no-repeat;
+        top: 2px;
+        right: 2px;
+        bottom: 2px;
+        left: 2px;
+        background: white;
+        border-radius: 2px;
+    }
+    .radio-custom,
+    .radio:checked + .radio-custom::before {
+        border-radius: 50%;
     }
 
-    .slider__selector-item {
-        float: left;
-        width: 19px;
-        height: 19px;
-        margin-right: 2px;
-        margin-top: -1px;
-    }
+    /*.slider__selector {*/
+        /*position: absolute;*/
+        /*bottom: -92px;*/
+        /*right: 110px;*/
+        /*width: 87px;*/
+        /*height: 16px;*/
+        /*!*background-color: red;*!*/
+        /*background-image: url(../img/slider-selector.png);*/
+        /*background-repeat: no-repeat;*/
+    /*}*/
 
-    .slider__selector-item--selected {
-        background-image: url(../img/slider-selected.png);
-    }
+    /*.slider__selector-item {*/
+        /*float: left;*/
+        /*width: 19px;*/
+        /*height: 19px;*/
+        /*margin-right: 2px;*/
+        /*margin-top: -1px;*/
+    /*}*/
+
+    /*.slider__selector-item--selected {*/
+        /*background-image: url(../img/slider-selected.png);*/
+    /*}*/
 
     /*------------ TOP ROW ----------------*/
     .top-row {
-        margin-top: 167px;
+        margin-top: 85px;
     }
 
     .row-content {
@@ -167,6 +210,7 @@
     .row-content__block {
         padding-left: 63px;
         position: relative;
+        padding-bottom: 30px;
     }
 
     .row-content__h2 {
@@ -178,6 +222,7 @@
         background-color: white;
         padding-left: 35px;
         padding-top: 87px;
+        padding-bottom: 80px;
     }
 
     .slides_white-container-text {
@@ -215,24 +260,47 @@
         font-family: "Open Sans", Arial, sans-serif;
         font-size: 16px;
         line-height: 1.4;
-        padding-top: 6px;
-        padding-left: 3px;
+        padding: 6px 60px 0px 3px;
+        max-height: 134.4px;
+        overflow: hidden;
     }
 
     .white-block-container {
         position: relative;
     }
 
-    .block_white_right {
+    .slider__selector-white {
         position: absolute;
-        top: -50px;
+        top: -35px;
         right: 50px;
-    }
-
-    .white-selector {
         background-color: white;
     }
 
+    .radio-white {
+        display: none;
+    }
+
+    .radio-custom-white {
+        display: block;
+        width: 17px;
+        height: 17px;
+        border: 2px solid #e8e8e8;
+        /*background-color: black;*/
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .radio-white:checked + .radio-custom-white::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        bottom: 2px;
+        left: 2px;
+        background: #5a5a5a;
+        border-radius: 50%;
+    }
     /*--------------- MIDLE ROW ----------------    */
     .middle-row {
         padding: 94px 20px 92px 20px;
@@ -254,6 +322,18 @@
         padding-top: 17px;
     }
 
+    .row-content__p {
+        font-size: 16px;
+        line-height: 24px;
+        max-height: 76px;
+        overflow: hidden;
+    }
+
+    .row-content__link {
+        padding-top: 10px;
+        padding-left: 122px;
+    }
+
     .preview {
         float: left;
     }
@@ -267,6 +347,7 @@
     }
 
     .news p {
+        padding-top: 10px;
         white-space: pre-wrap; /* Как запретить разрыв буквы от слова? */
     }
 
@@ -329,7 +410,7 @@
         color: white;
         padding: 47px 0 145px 0;
         text-align: center;
-        background: url("../img/footer_bg.jpg") no-repeat relative;
+        background: url("../img/footer_bg.jpg");
         font-size: 12px;
         font-family: "Open Sans", Arial, sans-serif;
         text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
