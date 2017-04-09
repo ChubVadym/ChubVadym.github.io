@@ -1,0 +1,131 @@
+@media ( min-width: 768px) {
+
+    body {
+        background: url("../img/main_bg_960.jpg");
+    }
+
+    .menu__list li {
+        display: -webkit-box;
+    }
+
+    .menu__item {
+        width: 71%;
+        margin: 0 auto;
+    }
+
+
+
+    .drop {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        visibility: visible;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+    }
+
+    .menu__item_drop {
+        /*float: left;*/
+        padding-left: 40px;
+        border: none;
+    }
+
+    .menu__item:hover {
+        border-bottom: none;
+        border-top: none;
+        background: none;
+        border-radius: 0 0;
+    }
+
+    .menu__link {
+        line-height: 28px;
+    }
+
+    .menu__link:hover {
+        border-bottom: 2px solid #edbfff;
+    }
+
+    .slider__selector {
+        top: 343px;
+        left: 616px;
+    }
+
+    .slider__p {
+        display: block;
+        padding-top: 10px;
+        width: 57%;
+        max-height: 88px;
+        overflow: hidden;
+        font-size: 16px;
+        font-family: "Open Sans", Arial, sans-serif;
+        line-height: 1.2;
+    }
+
+    .row-content {
+        flex-direction: row;
+    }
+
+    .row-content__block {
+        min-width: 33%;
+    }
+
+    .row-content__p {
+        max-height: 143px;
+    }
+
+    .row-content__link {
+        padding-left: 40%;
+    }
+
+    .medium-container {
+    }
+
+    .slides_white {
+        width: 50%;
+        float: left;
+        padding-left: 30px;
+    }
+
+    .middle-row {
+        box-shadow: inset 0 15px 15px  -15px #333;
+    }
+
+    .news__link {
+        margin-top: 40px;
+    }
+
+    .slider__selector-white {
+        top: 52px;
+        right: 124px;
+    }
+
+    .logos {
+        padding: 0;
+        padding-top: 40px;
+        border-top: 1px solid #e6e6e6;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .news-categories-container {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .news-categories {
+        padding: 90px 40px 73px 40px;
+    }
+
+    .news-categories__text {
+        max-height: 166px;
+    }
+
+    footer p {
+        text-align: right;
+    }
+
+}
