@@ -2,10 +2,17 @@
         background: url("../img/main_bg_320.jpg.") no-repeat fixed 0px 0px;
     }
 
-    /*.wrapper {*/
-    /*min-width: 320px;*/
-    /*max-width: 480px;*/
-    /*}*/
+    .wrapper {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+
+
     .header-logo {
         text-align: center;
     }
