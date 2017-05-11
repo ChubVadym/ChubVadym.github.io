@@ -22,7 +22,6 @@
     font-style: normal;
 }
 
-
 .menu,
 .menu__list,
 .slider__content,
@@ -30,14 +29,17 @@
 .slides_white__h2,
 .slides_white__h3,
 .middle-row-content legend,
-.news__link {
+.news__link,
+.news-categories__header,
+.menu_item_a {
     font-family: league_gothicCnRg, Tahoma, sans-serif;
 }
 
 /*.row-content__p,*/
 /*.slides_white__p,*/
 p,
-footer {
+footer,
+news-categories__text {
     font-family: open_sanslight, Arial, sans-serif;
 }
 
@@ -49,7 +51,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    word-break: break-all;
+    /*word-break: break-all;*/
 }
 
 .clearfix:after {
@@ -59,6 +61,7 @@ html {
 }
 
 .wrapper {
+    width: 100%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -107,81 +110,105 @@ h1 {
 }
 
 .menu__nav {
-    visibility: hidden;
-    position: absolute;
-    left: 50%;
-    margin-left: -36px;
     font-size: 1.5rem;
     z-index: 1;
 }
 
-.menu__nav:hover {
-    visibility: visible;
-    left: 50%;
-    margin-left: -120px;
-}
 
-.menu__nav:hover .menu__link {
-    display: block;
-}
-
-.menu__nav:hover .menu__link--initial {
-    text-shadow: none;
-    border: 0;
-}
 
 .menu__list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid rgba(5, 17, 22, 0.8);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.menu__item {
-    padding-top: 1px;
-    overflow: hidden;
-    background-color: #36293e;
-    background-color: rgba(54, 41, 62, 0.9);
-    border-bottom: 1px solid rgba(53, 39, 61, 0.9);
-    box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);
 }
 
 .menu__link {
-    min-width: 240px;
-    /*height: 60px;*/
     color: #fefefe;
-    font-size: 24px;
-    line-height: 40px;
-    text-align: center;
     text-transform: uppercase;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid transparent; /*сдвигается на 2 px все равно. Почему?*/
 }
+
+
+
+
+
 
 .menu__link:hover {
     display: block;
-    background-color: #13070C;
-    background-color: rgba(0, 0, 0, 0.3);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6) !important;
     border-bottom: 2px solid #edbfff !important;
 }
 
-.menu__link:hover menu__link--initial {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /*в пункте хоум при наведении сдвигает бордер*/
-    border-bottom: 2px solid #edbfff;
-}
 
-.menu__link--initial {
-    visibility: visible;
-    padding: 0 5px;
-    border-bottom: 2px solid #edbfff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+@media (max-width: 768px) {
+    .menu__nav {
+        visibility: hidden;
+        margin-left: -36px;
+        position: absolute;
+        left: 50%;
+    }
+
+    .menu__nav:hover {
+        visibility: visible;
+        left: 50%;
+        margin-left: -120px;
+    }
+
+    .menu__nav:hover .menu__link {
+        display: block;
+    }
+
+    .menu__nav:hover .menu__link--initial {
+        text-shadow: none;
+        border: 0;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(5, 17, 22, 0.8);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .menu__item {
+        padding-top: 1px;
+        overflow: hidden;
+        background-color: #36293e;
+        background-color: rgba(54, 41, 62, 0.9);
+        border-bottom: 1px solid rgba(53, 39, 61, 0.9);
+        box-shadow: inset 0 -1px 0 rgba(105, 82, 114, 0.59);
+    }
+
+    .menu__link {
+        min-width: 240px;
+        /*height: 60px;*/
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+    }
+
+    .menu__link:hover {
+        background-color: #13070C;
+        background-color: rgba(0, 0, 0, 0.3);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6) !important;
+    }
+
+    .menu__link:hover menu__link--initial {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /*в пункте хоум при наведении сдвигает бордер*/
+        border-bottom: 2px solid #edbfff;
+    }
+
+    .menu__link--initial {
+        visibility: visible;
+        padding: 0 5px;
+        border-bottom: 2px solid #edbfff;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
 }
 
 .slider {
-    margin-top: 150px;
+    vertical-align: middle;
+    position: relative;
 }
 
 .shadow-bottom {
@@ -194,15 +221,22 @@ h1 {
 
 /*------------------SLIDER---------------------*/
 
+.grayline {
+    margin-top: 150px;
+}
+
 .slider__content {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
     /*width: 320px;*/
     /*margin: 120px auto 0 auto;*/
 }
 
 .slider__article {
     text-align: center;
-    width: 202px;
+    /*width: 202px;*/
     margin: 0 auto;
     color: white;
     overflow: hidden;
@@ -226,6 +260,13 @@ h2 {
 
 .slider__image {
     display: none;
+    width: 50%;
+    max-width: 262px;
+}
+
+.slider__image img {
+    height: auto;
+    width: 100%;
 }
 
 .slider__left-arrow a {
@@ -275,7 +316,6 @@ h2 {
     vertical-align: middle;
 }
 
-
 .radio:checked + .radio-custom::before {
     content: "";
     display: block;
@@ -284,7 +324,7 @@ h2 {
     right: 2px;
     bottom: 2px;
     left: 2px;
-    background: black;
+    background: white;
     border-radius: 2px;
 }
 
@@ -327,33 +367,33 @@ h2 {
 }
 
 .row-content__icon1 {
-display: block;
-position: absolute;
-width: 26px;
-height: 30px;
-left: 14px;
-top: 4px;
-background: url("../img/sprite.png") no-repeat 0 0;
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 30px;
+    left: 14px;
+    top: 4px;
+    background: url("../img/sprite.png") no-repeat 0 0;
 }
 
 .row-content__icon2 {
-display: block;
-position: absolute;
-width: 28px;
-height: 30px;
-left: 14px;
-top: 4px;
-background: url("../img/sprite.png") no-repeat -27px 0;
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 30px;
+    left: 14px;
+    top: 4px;
+    background: url("../img/sprite.png") no-repeat -27px 0;
 }
 
 .row-content__icon3 {
-display: block;
-position: absolute;
-width: 25px;
-height: 30px;
-left: 14px;
-top: 4px;
-background: url("../img/sprite.png") no-repeat -56px 0;
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    left: 14px;
+    top: 4px;
+    background: url("../img/sprite.png") no-repeat -56px 0;
 }
 
 .slides_white__h2 {
@@ -377,13 +417,12 @@ background: url("../img/sprite.png") no-repeat -56px 0;
 .slides_white {
     position: relative;
     padding: 70px 55px 40px 20px;
-    border: 1px solid gray;
+    border-bottom: 1px solid #efefef;
 }
 
 .slides_white__item {
     padding-left: 70px;
 }
-
 
 .slides_white__p {
     font-size: 1rem;
@@ -397,7 +436,6 @@ background: url("../img/sprite.png") no-repeat -56px 0;
     bottom: -2.25rem;
     left: 50%;
 }
-
 
 .white-slider .radio-custom {
     background-color: transparent;
@@ -420,7 +458,8 @@ background: url("../img/sprite.png") no-repeat -56px 0;
 
 .middle-row {
     margin-top: 2.25rem;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
+    padding: 3rem 2rem 0rem 2rem;
 }
 
 .middle-row-content {
@@ -442,7 +481,7 @@ background: url("../img/sprite.png") no-repeat -56px 0;
 }
 
 /*.news-container {*/
-    /*margin-bottom: 1.5rem;*/
+/*margin-bottom: 1.5rem;*/
 /*}*/
 
 .news {
@@ -495,8 +534,41 @@ background: url("../img/sprite.png") no-repeat -56px 0;
     display: none;
 }
 
+.news-categories-container {
+    padding: 20px;
+    background-color: #ececec;
+    border-top: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.news-categories {
+    color: #454545;
+    padding: 30px 0;
+}
+
+.news-categories__header {
+    line-height: 3rem;
+}
+
+.news-categories__text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-height: 6rem;
+    overflow: hidden;
+}
+
 .navi {
     display: none;
+    text-transform: uppercase;
+    padding-bottom: 45px;
+}
+
+.menu_item_a {
+    color: white;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
 }
 
 footer {
@@ -514,9 +586,6 @@ footer span {
     font-family: open_sansextrabold, Arial, sans-serif;
     font-weight: bold;
 }
-
-
-
 
 /*.menu__link {*/
 /*text-decoration: none;*/
@@ -549,8 +618,6 @@ footer span {
 /*.row-content__link:hover {*/
 /*text-shadow: 0px 0px 10px white;*/
 /*}*/
-
-
 
 /*.slides_white {*/
 /*box-shadow: inset 0 15px 15px  -15px #333;*/
