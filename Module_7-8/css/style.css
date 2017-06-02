@@ -27,7 +27,7 @@
 .slider__content,
 .row-content__h2,
 .slides_white__h2,
-/*.slides_white__h3,*/
+    /*.slides_white__h3,*/
 .middle-row-content legend,
 .news__link,
 .news-categories__header,
@@ -95,11 +95,6 @@ h1 {
 
 .header-logo {
     text-transform: uppercase;
-
-.header-logo:hover {
-    color: red;
-}
-
 }
 
 .header-logo__span {
@@ -114,8 +109,6 @@ h1 {
     z-index: 1;
 }
 
-
-
 .menu__list {
     display: flex;
 }
@@ -126,16 +119,10 @@ h1 {
     border-bottom: 2px solid transparent; /*сдвигается на 2 px все равно. Почему?*/
 }
 
-
-
-
-
-
 .menu__link:hover {
     display: block;
     border-bottom: 2px solid #edbfff !important;
 }
-
 
 @media (max-width: 768px) {
     .menu__nav {
@@ -547,10 +534,6 @@ h2 {
 .link6 {
     background-position: -630px;
 }
-
-
-
-
 
 .logo__img {
     /*width: 90%;*/
