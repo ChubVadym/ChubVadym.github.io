@@ -1,8 +1,6 @@
 "use strict";
 
 
-alert('sdasf');
-
 var users = [];
 
 
